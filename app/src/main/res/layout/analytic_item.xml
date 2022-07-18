@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budget Item : Personal Expenses"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:padding="5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/item_name"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spent 100"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            app:layout_constraintTop_toBottomOf="@id/item_name"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/amount_spent"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100% used"
+
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            app:layout_constraintTop_toBottomOf="@id/amount_spent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/budget_percentage"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="on 27-06-2022"
+
+            android:textStyle="bold"
+
+            android:paddingLeft="10dp"
+
+            app:layout_constraintTop_toBottomOf="@id/budget_percentage"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/date"
+            />
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintStart_toEndOf="@id/budget_percentage"
+            android:background="@drawable/green"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/dot"
+            />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="15dp"
+            android:id="@+id/item_image"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

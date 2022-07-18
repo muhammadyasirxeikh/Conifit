@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient"
+    tools:context=".ui.fragment.MonthlyAnalytics">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/action_bar_with_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include"
+        >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+       app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/linear"
+        style="@style/edittextbackground"
+        android:weightSum="3"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/green"
+            android:text="L 50%"
+
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/brown"
+            android:text="G=50% L=100%"
+
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textSize="10sp"
+
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/red"
+            android:text="G 100%"
+            android:layout_weight="1"
+
+            android:textColor="@color/black"
+            android:textSize="10sp"
+
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/linear"
+        android:padding="10dp"
+        android:id="@+id/today_screen_recycler"
+        android:scrollbars="none"
+        />
+
+    <com.anychart.AnyChartView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:id="@+id/pie_chart"
+        app:layout_constraintTop_toBottomOf="@id/today_screen_recycler"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

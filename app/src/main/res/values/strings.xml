@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Conifit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="items">
+
+        <item>Select item</item>
+        <item>Food</item>
+        <item>Travel</item>
+        <item>Equipment</item>
+        <item>Referee</item>
+        <item>Fines</item>
+
+
+    </string-array>
+
+
+    <string-array name="item_income">
+
+        <item>Select item</item>
+        <item>Players Match Day Fee</item>
+        <item>Prize Events</item>
+        <item>Sponsors</item>
+        <item>Tickets</item>
+
+
+    </string-array>
+
+    <string-array name="Subscription_item">
+
+        <item>Select item</item>
+        <item>Kits</item>
+        <item>Pitch</item>
+        <item>League Fee</item>
+        <item>Insurance</item>
+
+
+    </string-array>
+
+
+</resources>
